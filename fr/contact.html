@@ -39,8 +39,37 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <main>
             <section>
-                <article>
-                </article>
+                <header>
+                    <h1>FORMULAIRE DE CONTACT</h1>
+                    <p>N'hésitez pas à rester en contact avec nous via ce formulaire.</p>
+                </header>
+                <form action="#">
+                    <div>
+                        <label for="Nom">Nom <aside>*</aside></label>
+                        <input type="text" name="Nom" id="Nom">
+                    </div>
+                    <div>
+                        <label for="Prénom">Prénom <aside>*</aside></label>
+                        <input type="text" name="Prénom" id="Prénom">
+                    </div>
+                    <div>
+                        <label for="Mail">Mail <aside>*</aside></label>
+                        <input type="text" name="Mail" id="Mail">
+                    </div>
+                    <div>
+                        <label for="Téléphone">Téléphone <aside>*</aside></label>
+                        <input type="text" name="Téléphone" id="Téléphone">
+                    </div>
+                    <div>
+                        <label for="Message">Message</label>
+                        <textarea id="Message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <div>
+                    <aside>(*)</aside>
+                    <p>Champs obligatoires</p>
+                </div>
             </section>
         </main>
 
