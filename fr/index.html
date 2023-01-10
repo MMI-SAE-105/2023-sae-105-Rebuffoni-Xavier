@@ -20,7 +20,21 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                 <img src="/public/img/logo_site.webp" alt="logo site">
             </a>
 
-            
+            <button aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIspoen"
+            >
+                <img src="/public/img/logo_menu.webp" alt="logo menu">
+            </button>
+
+            <nav id="mainNav"
+            x-show="menuIsOpen"
+            >
+                <ul>
+                    <li><a href="/fr/exposition.html">Supr'Expo</a></li>
+                    <li><a href="#">Billetterie</a></li>
+                    <li><a href="/fr/suprematisme.html">Suprematisme</a></li>
+                </ul>
+            </nav>
         </header>
     </body>
 </html>
