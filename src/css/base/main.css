@@ -10,6 +10,7 @@ p {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: var(--textes-articles);
     color: var(--couleur-dominante);
+    line-height: 25px;
 }
 
 .button {
