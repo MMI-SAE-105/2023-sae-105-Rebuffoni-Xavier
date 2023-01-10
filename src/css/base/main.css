@@ -21,6 +21,20 @@ p {
     font-weight: bold;
 }
 
+.link {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: var(--textes-articles);
+    color: var(--couleur-liens);
+    line-height: 25px;
+}
+
+strong {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
 .button {
     margin: 0;
     padding: 0;
