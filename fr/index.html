@@ -12,6 +12,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
         <link rel="stylesheet" href="/src/css/pages/home.css">
+        <link rel="stylesheet" href="/src/css/base/carrousel_home.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -152,6 +153,43 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                     <h2 class="article__title">Le Suprématisme</h2>
 
                     <p class="article__text">Notre exposition tourne autour de ce mouvement artistique. Mais qu’est ce que le suprématisme ?</p>
+
+                    <div class="home__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
+
+                        <button class="carrousel_btn carrousel_btn-avant"
+                            aria-label="slide précedant" 
+                            @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                            <
+                        </button>
+                        <button class="carrousel_btn carrousel_btn-apres"
+                            aria-label="slide suivant" 
+                            @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                            >
+                        </button>
+
+                        <div class="carrousel_parent-ecrans" 
+                            x-ref="parent" @scroll.debounce.250ms.passive="
+                        hrefCourant = '#'+
+                                        [...$refs.parent.children]
+                                        .find(e=>e.getBoundingClientRect().x>=0)
+                                        .id
+                                                            ">
+                            
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Casimir_Malevich.webp" alt="Photo de Kasimir Malevich" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Des artistes</figcaption>
+                                </figure>
+                            </div>
+
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/carre_noir_fond_blanc.webp" alt="Peinture Carré noir sur fond blanc" class="carrousel__ecran--img">
+                                    <figcaption class="legend">Des oeuvres</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
 
                     <button class="button">
                         <a href="/fr/suprematisme.html" class="button__click">

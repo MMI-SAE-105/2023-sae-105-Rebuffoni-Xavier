@@ -13,6 +13,13 @@ p {
     line-height: 25px;
 }
 
+.legend {
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--légendes);
+    font-style: italic;
+    font-weight: bold;
+}
+
 .button {
     margin: 0;
     padding: 0;
