@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Supr'Expo</title>
+
+        <link rel="icon" href="/public/img/logo_site.webp">
+
+        <script defer src="https://unpkg.com/alpinejs"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="/fr/index.html">
+                <img src="/public/img/logo_site.webp" alt="logo site">
+            </a>
+
+            <button aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIspoen"
+            >
+                <img src="/public/img/logo_menu.webp" alt="logo menu">
+            </button>
+
+            <nav id="mainNav"
+            x-show="menuIsOpen"
+            >
+                <ul>
+                    <li><a href="/fr/exposition.html">Supr'Expo</a></li>
+                    <li><a href="#">Billetterie</a></li>
+                    <li><a href="/fr/suprematisme.html">Suprematisme</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <h5>Nous suivre</h5>
+
+                <ul>
+                    <li>
+                        <a href=""">
+                            <img src="/public/img/mail.webp" alt="logo mail">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/public/img/instagram.webp" alt="logo instagram">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/public/img/youtube.webp" alt="logo youtube">
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="https://www.fondationcartier.com/">
+                    <img src="/public/img/logo_cartier.webp" alt="logo Fondation Cartier">
+                </a>
+
+                <a href="/fr/index.html">
+                    <img src="/public/img/logo_site.webp" alt="logo site">
+                </a>
+            </div>
+
+            <nav>
+                <a href="/fr/contact.html">
+                    <h5>Contact</h5>
+                </a>
+            </nav>
+
+            <div>
+                <h5>Mentions Légales</h5>
+
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+
+                <img src="/public/img/logo_MMI.webp" alt="logo MMI">
+            </div>
+        </footer>
+    </body>
+</html>
