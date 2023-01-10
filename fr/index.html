@@ -41,7 +41,14 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main class="home">
+        <main class="home"
+            x-data="{
+                imageIsOpen1: null,
+                imageIsOpen2: null,
+                imageIsOpen3: null,
+                imageIsOpen4: null,
+            }"
+        >
             <section>
                 <header class="home__intro">
                     <h1 class="home__intro--title">SUPR'EXPO</h1>
@@ -55,22 +62,77 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                     </a>
                 </button>
 
-                <div>
-                    <a href="/fr/exposition.html">
-                        <img src="/public/img/carré_calendar.webp" alt="carré calendrier">
-                    </a>
+                <div class="home__miniatures miniatures">
+                    <img src="/public/img/carré_calendar.webp" alt="carré calendrier"
+                        @click="imageIsOpen1 = '/public/img/calendar.webp'"
+                        class="miniatures__img"
+                    >
 
-                    <a href="/fr/exposition.html">
-                        <img src="/public/img/carré_maps.webp" alt="carré lieu">
-                    </a>
+                    <img src="/public/img/carré_maps.webp" alt="carré lieu"
+                        @click="imageIsOpen2 = '/public/img/map-pin.webp'"
+                        class="miniatures__img"
+                    >
 
-                    <a href="/fr/exposition.html">
-                        <img src="/public/img/carré_clock.webp" alt="carré horaires">
-                    </a>
+                    <img src="/public/img/carré_clock.webp" alt="carré horaires"
+                        @click="imageIsOpen3 = '/public/img/clock.webp'"
+                        class="miniatures__img"
+                    >
 
-                    <a href="/fr/exposition.html">
-                        <img src="/public/img/carré_money.webp" alt="carré tarifs">
-                    </a>
+                    <img src="/public/img/carré_money.webp" alt="carré tarifs"
+                        @click="imageIsOpen4 = '/public/img/€.webp'"
+                        class="miniatures__img"
+                    >
+                </div>
+                
+                <div class="home__overlay overlay"
+                    x-show="imageIsOpen1"
+                    @click="imageIsOpen1=null"
+                    @keyup.escape.window="imageIsOpen1 = null"
+                >
+                    <figure class="overlay__figure">
+                        <img :src="imageIsOpen1" alt="logo calendrier">
+                        <figcaption>Du 13 avril au 23 juin 2021</figcaption>
+                    </figure>
+                </div>
+
+                <div class="home__overlay overlay"
+                    x-show="imageIsOpen2"
+                    @click="imageIsOpen2=null"
+                    @keyup.escape.window="imageIsOpen2 = null"
+                >
+                    <figure class="overlay__figure">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.096829102437!2d2.3319150999999994!3d48.83729169999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671c80c12b47d%3A0x225ddbf564cf5d5a!2sFondation%20Cartier%20pour%20l&#39;art%20contemporain!5e0!3m2!1sfr!2sfr!4v1673376775312!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </div>
+
+                <div class="home__overlay overlay"
+                    x-show="imageIsOpen3"
+                    @click="imageIsOpen3=null"
+                    @keyup.escape.window="imageIsOpen3 = null"
+                >
+                    <figure class="overlay__figure">
+                        <img :src="imageIsOpen3" alt="logo horaires">
+                        <figcaption>Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</figcaption>
+                    </figure>
+                </div>
+
+                <div class="home__overlay overlay"
+                    x-show="imageIsOpen4"
+                    @click="imageIsOpen4=null"
+                    @keyup.escape.window="imageIsOpen4 = null"
+                >
+                    <figure class="overlay__figure">
+                        <img :src="imageIsOpen4" alt="logo tarifs">
+                        <figcaption>
+                            <ul>
+                                <li>Plein tarif = 11€</li>
+                                <li>Tarif réduit = 7,50€</li>
+                                <li>Réduction 13 - 25 ans = 5€</li>
+                                <li>Fondation Cartier Pass = 18€ - 50€</li>
+                                <li>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants = Gratuit</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
                 </div>
 
                 <div class="home__billetterie">
