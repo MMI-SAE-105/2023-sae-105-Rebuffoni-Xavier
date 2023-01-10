@@ -1,0 +1,18 @@
+:root {
+/* Color styles */
+--couleur-dominante: rgba(255, 255, 255, 1);
+--couleur-tonique-1: rgba(208, 64, 64, 1);
+--pied-de-page: rgba(21, 86, 133, 1);
+--couleur-tertiaire: rgba(32, 100, 39, 1);
+--menu: rgba(64, 148, 208, 1);
+--couleur-annexe-1: rgba(208, 142, 64, 1);
+
+/* Text-size styles */
+--titre-menu: 36px;
+--titres-articles: 24px;
+--textes-articles: 15px;
+--légendes: 12px;
+--titre-pied-de-page: 16px;
+--texte-pied-de-page: 10px;
+--button: 12px;
+}
