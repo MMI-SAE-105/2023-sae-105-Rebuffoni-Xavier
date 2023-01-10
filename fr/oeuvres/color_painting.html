@@ -15,24 +15,26 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
     </head>
 
     <body>
-        <header>
-            <a href="/fr/index.html">
-                <img src="/public/img/logo_site.webp" alt="logo site">
+        <header class="header">
+            <a href="/fr/index.html" class="header__logo">
+                <img src="/public/img/logo_site.webp" alt="logo site" class="header__logo--img">
             </a>
 
             <button aria-controls="mainNav"
             @click="menuIsOpen = ! menuIspoen"
+            class="header__btn"
             >
-                <img src="/public/img/logo_menu.webp" alt="logo menu">
+                <img src="/public/img/logo_menu.webp" alt="logo menu" class="header__btn--menu">
             </button>
 
             <nav id="mainNav"
             x-show="menuIsOpen"
+            class="header__menu menu"
             >
-                <ul>
-                    <li><a href="/fr/exposition.html">Supr'Expo</a></li>
-                    <li><a href="#">Billetterie</a></li>
-                    <li><a href="/fr/suprematisme.html">Suprematisme</a></li>
+                <ul class="menu__items">
+                    <li><a href="/fr/exposition.html" class="menu__items--title">Supr'Expo</a></li>
+                    <li><a href="#" class="menu__items--title">Billetterie</a></li>
+                    <li><a href="/fr/suprematisme.html" class="menu__items--title">Suprematisme</a></li>
                 </ul>
             </nav>
         </header>
