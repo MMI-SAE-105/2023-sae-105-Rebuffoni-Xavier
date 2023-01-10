@@ -98,12 +98,23 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
         </main>
 
         <footer class="footer">
-            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="footer__flag">
-                <img src="/public/img/Anglais.webp" alt="logo changment de langue" class="footer__flag--img">
-            </a>
+
+            <div class="link__logo">
+                <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'">
+                    <img src="/public/img/Anglais.webp" alt="logo changment de langue" class="link__logo--img2">
+                </a>
+
+                <a href="https://www.fondationcartier.com/">
+                    <img src="/public/img/logo_cartier.webp" alt="logo Fondation Cartier" class="link__logo--img">
+                </a>
+
+                <a href="/fr/index.html" class="link__">
+                    <img src="/public/img/logo_site.webp" alt="logo site" class="link__logo--img">
+                </a>
+            </div>
 
             <div class="footer__link link">
-                <h5 class="link__title">Nous suivre</h5>
+                <h5 class="footer__title1">Nous suivre</h5>
 
                 <ul class="link__nav nav">
                     <li class="nav__items">
@@ -124,16 +135,6 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                         </a>
                     </li>
                 </ul>
-
-                <div class="link__logo">
-                    <a href="https://www.fondationcartier.com/">
-                        <img src="/public/img/logo_cartier.webp" alt="logo Fondation Cartier" class="link__logo--img">
-                    </a>
-
-                    <a href="/fr/index.html" class="link__">
-                        <img src="/public/img/logo_site.webp" alt="logo site" class="link__logo--img">
-                    </a>
-                </div>
             </div>
 
             <nav class="footer__nav nav">
@@ -145,9 +146,11 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             <div class="footer__legal legal">
                 <h5 class="legal__title">Mentions Légales</h5>
 
-                <p class="legal__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+                <div class="legal__div div">
+                    <p class="div__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
 
-                <img src="/public/img/logo_MMI.webp" alt="logo MMI" class="legal__img">
+                    <img src="/public/img/logo_MMI.webp" alt="logo MMI" class="div__img">
+                </div>
             </div>
         </footer>
     </body>
