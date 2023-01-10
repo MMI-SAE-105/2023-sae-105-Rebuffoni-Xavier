@@ -1,0 +1,49 @@
+.menu {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vW;
+    height: 100vH;
+    background: var(--menu);
+    display: grid;
+    place-content: left;
+    }
+
+    .noscroll,
+    .noscroll body {
+    overflow: hidden;
+}
+
+.menu__items {
+    margin: 0;
+    padding: 0;
+    margin-top: 6rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14rem;
+    text-align: center;
+}
+
+.items__li1 {
+    transform: rotate(-11.17deg);
+}
+
+.items__li2 {
+    transform: rotate(10.42deg);
+}
+
+.items__li3 {
+    transform: rotate(-33.29deg);
+}
+
+.items__li1--title,
+.items__li2--title,
+.items__li3--title {
+    font-family: 'Anton', sans-serif;
+    font-size: var(--titre-menu);
+    color: black;
+    text-decoration: none;
+    border: solid;
+    padding: 0.2rem;
+}
