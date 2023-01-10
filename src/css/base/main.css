@@ -1,0 +1,13 @@
+h1,
+h2,
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: var(--titres-articles);
+    color: var(--couleur-dominante);
+}
+
+p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: var(--textes-articles);
+    color: var(--couleur-dominante);
+}
