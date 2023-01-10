@@ -1,0 +1,68 @@
+.exposition {
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDED;
+}
+
+.exposition__intro--title {
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 6rem;
+    color: black;
+}
+
+.exposition__intro--text {
+    margin-bottom: 0;
+    padding-left: 5px;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+.exposition__div {
+    background-color: var(--couleur-annexe-1);
+    margin-bottom: 2rem;
+    margin-left: 5px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    border: solid;
+}
+
+.exposition__div--img {
+    width: 37px;
+    height: auto;
+    padding-left: 0.3rem;
+}
+
+.tarif {
+    background-color: var(--couleur-annexe-1);
+    margin-left: 5px;
+    padding: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    border: solid;
+}
+
+.tarif__div {
+    background-color: var(--couleur-annexe-1);
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.liste__text {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: var(--textes-articles);
+    color: var(--couleur-dominante);
+    line-height: 25px;
+}
+
+.button {
+    margin-left: 6rem;
+}
