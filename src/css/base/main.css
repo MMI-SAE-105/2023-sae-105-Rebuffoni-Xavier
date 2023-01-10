@@ -11,3 +11,39 @@ p {
     font-size: var(--textes-articles);
     color: var(--couleur-dominante);
 }
+
+.button {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: none;
+    background-color: var(--couleur-tonique-1);
+    border: solid;
+}
+
+.button__click {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button__click--text {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: var(--button);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button__click--img {
+    margin: 0;
+    padding: 5px;
+    width: 38px;
+}

@@ -43,14 +43,15 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <main class="home">
             <section>
-                <header class="home__header">
-                    <h1 class="home__header--title">Supr'Expo</h1>
-                    <p>Exposition sur le mouvement artstique du Suprématisme</p>
+                <header class="home__intro">
+                    <h1 class="home__intro--title">SUPR'EXPO</h1>
+                    <p class="home__intro--text">Exposition sur le mouvement artstique du Suprématisme</p>
                 </header>
 
                 <button class="button">
-                    <a href="/fr/exposition.html">
-                        En savoir plus <img src="/public/img/arrow.webp" alt="logo arrow" class="button__img">
+                    <a href="/fr/exposition.html" class="button__click">
+                        <p class="button__click--text">En savoir plus</p>
+                        <img src="/public/img/arrow.webp" alt="logo arrow" class="button__click--img">
                     </a>
                 </button>
 
@@ -76,22 +77,24 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                     <h2 class="home__billetterie--title">Réservez vos billets dès maintenant</h2>
 
                     <button class="button">
-                        <a href="#">
-                            Voir Billetterie <img src="/public/img/arrow.webp" alt="logo arrow" class="button__img">
+                        <a href="#" class="button__click">
+                            <p class="button__click--text">Voir Billetterie</p>
+                            <img src="/public/img/arrow.webp" alt="logo arrow" class="button__click--img">
                         </a> 
                     </button>
                 </div>
 
-                <div class="home__article article">
-                    <img src="/public/img/suprematist.webp" alt="peinture The Suprematist" class="article__imgprincipale">
+                <img src="/public/img/suprematist.webp" alt="peinture The Suprematist" class="img__principale">
 
+                <div class="home__article article">
                     <h2>Le Suprématisme</h2>
 
                     <p>Notre exposition tourne autour de ce mouvement artistique. Mais qu’est ce que le suprématisme ?</p>
 
                     <button class="button">
-                        <a href="/fr/suprematisme.html">
-                            Lire plus <img src="/public/img/arrow.webp" alt="logo arrow" class="button__img">
+                        <a href="/fr/suprematisme.html" class="button__click">
+                            <p class="button__click--text">Lire plus</p>
+                            <img src="/public/img/arrow.webp" alt="logo arrow" class="button__click--img">
                         </a>
                     </button>
                 </div>
