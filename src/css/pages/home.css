@@ -100,7 +100,7 @@
 }
 
 .overlay>figure {
-    width: 85%;
+    width: 90%;
     margin: auto;
     padding: 1rem;
     border: solid;
@@ -124,6 +124,7 @@
 .overlay>figure>iframe {
     width: 100%;
     height: auto;
+    margin: auto;
 }
 
 .lien {
@@ -131,7 +132,6 @@
     font-size: var(--texte-articles);
     color: var(--couleur-dominante);
     line-height: 25px;
-
 }
 
 .miniatures {

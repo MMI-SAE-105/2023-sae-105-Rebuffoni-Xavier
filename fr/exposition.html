@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/exposition.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -40,48 +41,47 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="exposition">
             <section>
                 <article>
-                    <header>
-                        <h1>Supr'Expo</h1>
-                        <p>Exposition sur le mouvement artistique Suprématisme.</p>
+                    <header class="exposition__intro">
+                        <h1 class="exposition__intro--title">Supr'Expo</h1>
+                        <p class="exposition__intro--text">Exposition sur le mouvement artistique Suprématisme.</p>
                     </header>
 
-                    <div>
-                        <img src="/public/img/calendar.webp" alt="logo calendrier">
+                    <div class="exposition__div">
+                        <img src="/public/img/calendar.webp" alt="logo calendrier" class="exposition__div--img">
 
-                        <p>Du 13 avril au 23 juin 2021</p>
+                        <p class="exposition__div--text">Du 13 avril au 23 juin 2021</p>
                     </div>
 
-                    <div>
-                        <img src="/public/img/map-pin.webp" alt="logo maps">
+                    <div class="exposition__div">
+                        <img src="/public/img/map-pin.webp" alt="logo maps" class="exposition__div--img">
 
-                        <p><a href="https://www.fondationcartier.com/">Fondation Cartier, 261 Bd Raspail, 75014 Paris</a></p>
+                        <p class="exposition__div--text"><a href="https://www.fondationcartier.com/">Fondation Cartier, 261 Bd Raspail, 75014 Paris</a></p>
                     </div>
 
-                    <div>
-                        <img src="/public/img/clock.webp" alt="logo horaires">
+                    <div class="exposition__div">
+                        <img src="/public/img/clock.webp" alt="logo horaires" class="exposition__div--img">
 
-                        <p>Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+                        <p class="exposition__div--text">Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
                     </div>
 
-                    <div>
-                        <img src="/public/img/€.webp" alt="logo tarifs">
+                    <div class="exposition__div">
+                        <img src="/public/img/€.webp" alt="logo tarifs" class="exposition__div--img">
 
-                        <p>
-                            <ul>
-                                <li>Plein tarif = 11€</li>
-                                <li>Tarif réduit = 7,50€</li>
-                                <li>Réduction 13 - 25 ans = 5€</li>
-                                <li>Fondation Cartier Pass = 18€ - 50€</li>
-                                <li>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants = Gratuit</li>
-                            </ul>
-                        </p>
+                        <ul class="exposition__div--liste liste">
+                            <li class="liste__text">Plein tarif = 11€</li>
+                            <li class="liste__text">Tarif réduit = 7,50€</li>
+                            <li class="liste__text">Réduction 13 - 25 ans = 5€</li>
+                            <li class="liste__text">Fondation Cartier Pass = 18€ - 50€</li>
+                            <li class="liste__text">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants = Gratuit</li>
+                        </ul>
 
-                        <button>
-                            <a href="#">
-                                Billetterie <img src="/public/img/arrow.webp" alt="logo arrow">
+                        <button class="button">
+                            <a href="#" class="button__click">
+                                <p class="button__click--text">Billetterie</p>
+                                <img src="/public/img/arrow.webp" alt="logo arrow" class="button__click--img">
                             </a>
                         </button>
                     </div>
