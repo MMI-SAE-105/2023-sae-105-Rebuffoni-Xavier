@@ -73,55 +73,57 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </section>
         </main>
 
-        <footer>
-            <a href="/en/index.htm">
-                <img src="/public/img/Anglais.webp" alt="logo changment de langue">
+        <footer class="footer">
+            <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'" class="footer__flag">
+                <img src="/public/img/Anglais.webp" alt="logo changment de langue" class="footer__flag--img">
             </a>
-            
-            <div>
-                <h5>Nous suivre</h5>
 
-                <ul>
-                    <li>
-                        <a href=""">
-                            <img src="/public/img/mail.webp" alt="logo mail">
+            <div class="footer__link link">
+                <h5 class="link__title">Nous suivre</h5>
+
+                <ul class="link__nav nav">
+                    <li class="nav__items">
+                        <a href="#">
+                            <img src="/public/img/mail.webp" alt="logo mail" class="nav__items--img">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="nav__items">
                         <a href="#">
-                            <img src="/public/img/instagram.webp" alt="logo instagram">
+                            <img src="/public/img/instagram.webp" alt="logo instagram" class="nav__items--img">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="nav__items">
                         <a href="#">
-                            <img src="/public/img/youtube.webp" alt="logo youtube">
+                            <img src="/public/img/youtube.webp" alt="logo youtube" class="nav__items--img">
                         </a>
                     </li>
                 </ul>
 
-                <a href="https://www.fondationcartier.com/">
-                    <img src="/public/img/logo_cartier.webp" alt="logo Fondation Cartier">
-                </a>
+                <div class="link__logo">
+                    <a href="https://www.fondationcartier.com/">
+                        <img src="/public/img/logo_cartier.webp" alt="logo Fondation Cartier" class="link__logo--img">
+                    </a>
 
-                <a href="/fr/index.html">
-                    <img src="/public/img/logo_site.webp" alt="logo site">
-                </a>
+                    <a href="/fr/index.html" class="link__">
+                        <img src="/public/img/logo_site.webp" alt="logo site" class="link__logo--img">
+                    </a>
+                </div>
             </div>
 
-            <nav>
-                <a href="/fr/contact.html">
-                    <h5>Contact</h5>
+            <nav class="footer__nav nav">
+                <a href="/fr/contact.html" class="nav__link">
+                    <h5 class="nav__link--title">Contact</h5>
                 </a>
             </nav>
 
-            <div>
-                <h5>Mentions Légales</h5>
+            <div class="footer__legal legal">
+                <h5 class="legal__title">Mentions Légales</h5>
 
-                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+                <p class="legal__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
 
-                <img src="/public/img/logo_MMI.webp" alt="logo MMI">
+                <img src="/public/img/logo_MMI.webp" alt="logo MMI" class="legal__img">
             </div>
         </footer>
     </body>
