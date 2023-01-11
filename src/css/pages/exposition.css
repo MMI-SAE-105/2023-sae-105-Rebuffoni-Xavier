@@ -20,9 +20,9 @@
 
 .exposition__div {
     background-color: var(--couleur-annexe-1);
-    margin-bottom: 2rem;
-    margin-left: 5px;
     width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
@@ -38,9 +38,9 @@
 
 .tarif {
     background-color: var(--couleur-annexe-1);
-    margin-left: 5px;
     padding: 0;
     width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
