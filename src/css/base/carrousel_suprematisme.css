@@ -1,0 +1,159 @@
+.carrousel__ecran--img {
+    margin: 0;
+    padding: 0;
+    height: 356px;
+    width: auto;
+}
+
+.carrousel_parent-ecrans {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carrousel_ecran {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+}
+
+.carrousel_ecran div {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.carrousel {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 20%;
+    margin-bottom: 20px;
+    padding: 0;
+    position: relative;
+    background-color: #E5CF96;
+    }
+      
+    .carrousel_btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        background: var(--couleur-dominante,);
+        border-radius: 50%;
+        border: none;
+        display: grid;
+        place-content: center;
+        color: var(--couleur-tonique-1);
+        cursor: pointer;
+    }
+      
+    .carrousel_btn-avant {
+        left: 0;
+    }
+      
+    .carrousel_btn-apres {
+        right: 0;
+    }
+
+.carrousel2__ecran--img {
+    margin: 0;
+    padding: 0;
+    width: 269px;
+    height: auto;
+}
+    
+.carrousel2_parent-ecrans {
+    display: flex;
+    align-items: baseline;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+    
+.carrousel2_ecran {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+}
+    
+.page {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.page__text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--légendes);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.frise {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.frise__img {
+    width: 141px;
+    height: auto;
+}
+
+.frise__line {
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    
+}
+
+.frise__line--1 {
+    margin: 0;
+    padding: 0;
+    height: 0px;
+    width: 12rem;
+}
+    
+.carrousel2 {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 52%;
+    padding: 0;
+    position: relative;
+    background-color: var(--couleur-annexe-1);
+    }
+          
+    .carrousel2_btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        background: var(--couleur-dominante,);
+        border-radius: 50%;
+        border: none;
+        display: grid;
+        place-content: center;
+        color: var(--couleur-tonique-1);
+        cursor: pointer;
+    }
+          
+    .carrousel2_btn-avant {
+        left: 0;
+    }
+          
+    .carrousel2_btn-apres {
+        right: 0;
+    }

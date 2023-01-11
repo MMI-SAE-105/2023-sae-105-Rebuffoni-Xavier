@@ -1,0 +1,36 @@
+.suprematisme {
+    background: url(/public/img/suprematism_background.webp) no-repeat;
+    background-size: 100%;
+}
+
+.suprematisme__title {
+    font-size: 36px;
+    margin: 0px;
+    margin-left: -15%;
+    padding: 0px;
+    padding-top: 14%;
+    transform: rotate(-42.02deg);
+}
+
+.suprematisme__intro {
+    padding-top: 60%;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+}
+
+.suprematisme__artistes {
+    transform: rotate(-52.82deg);
+    margin: 0;
+    margin-left: 5rem;
+    padding: 0.5rem;
+    margin-top: 40%;
+    background-color: black;
+    width: 32%;
+}
+
+.suprematisme__oeuvres {
+    margin-top: 32%;
+    margin-left: 6.5rem;
+    transform: rotate(-42.49deg);
+}
