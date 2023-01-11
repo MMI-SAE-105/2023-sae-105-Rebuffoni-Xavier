@@ -32,6 +32,10 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             x-show="menuIsOpen"
             class="header__menu menu"
             >
+                <button class="menu__close" @click="menuIsOpen= ! menuIsOpen">
+                    <img class="menu__close--img" src="/public/img/Croix.webp" alt="Image bouton pour fermer le menu">
+                </button>
+                
                 <ul class="menu__items items">
                     <li class="items__li1"><a href="/fr/exposition.html" class="items__li1--title">Supr'Expo</a></li>
                     <li class="items__li2"><a href="#" class="items__li2--title">Billetterie</a></li>
