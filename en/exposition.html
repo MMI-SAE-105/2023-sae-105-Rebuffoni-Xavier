@@ -11,7 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
-        <link rel="stylesheet" href="/src/css/pages/oeuvre.css">
+        <link rel="stylesheet" href="/src/css/pages/exposition.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -36,7 +36,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                 <button class="menu__close" @click="menuIsOpen= ! menuIsOpen">
                     <img class="menu__close--img" src="/public/img/Croix.webp" alt="Image bouton pour fermer le menu">
                 </button>
-                
+
                 <ul class="menu__items items">
                     <li class="items__li1"><a href="/fr/exposition.html" class="items__li1--title">Supr'Expo</a></li>
                     <li class="items__li2"><a href="#" class="items__li2--title">Billetterie</a></li>
@@ -45,37 +45,49 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main class="oeuvre">
+        <main class="exposition">
             <section>
                 <article>
-                    <div class="oeuvre__head head">
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
+                    <header class="exposition__intro">
+                        <h1 class="exposition__intro--title">Supr'Expo</h1>
+                        <p class="exposition__intro--text">Exposition sur le mouvement artistique Suprématisme.</p>
+                    </header>
 
-                        <div class="head__intro">
-                            <img src="/public/img/painterly-architectonic.webp" alt="peinture Painterly Architectonic" class="head__intro--img">
+                    <div class="exposition__div">
+                        <img src="/public/img/calendar.webp" alt="logo calendrier" class="exposition__div--img">
 
-                            <h1 class="head__intro--title">Painterly Archi-tectonic</h1>
+                        <p class="exposition__div--text"><strong>Du 13 avril au 23 juin 2021</strong></p>
+                    </div>
+
+                    <div class="exposition__div">
+                        <img src="/public/img/map-pin.webp" alt="logo maps" class="exposition__div--img">
+
+                        <p class="exposition__div--text"><a href="https://goo.gl/maps/8aq798nRthVsxQFR7" class="link">Fondation Cartier, 261 Bd Raspail, 75014 Paris</a></p>
+                    </div>
+
+                    <div class="exposition__div">
+                        <img src="/public/img/clock.webp" alt="logo horaires" class="exposition__div--img">
+
+                        <p class="exposition__div--text">Tous les jours <strong>de 11h à 20h</strong>, <strong>sauf le lundi</strong>. Nocturne le <strong>mardi, jusqu'à 22h</strong>. La fermeture des salles débute <strong>à 19h45 (21h45 les mardis)</strong>.</p>
+                    </div>
+
+                    <div class="exposition__tarif tarif">
+                        <div class="tarif__div">
+                            <img src="/public/img/€.webp" alt="logo tarifs" class="tarif__div--img">
+
+                            <ul class="tarif__div--liste liste">
+                                <li class="liste__text">Plein tarif = <strong>11€</strong></li>
+                                <li class="liste__text">Tarif réduit = <strong>7,50€</strong></li>
+                                <li class="liste__text">Réduction 13 - 25 ans = <strong>5€</strong></li>
+                                <li class="liste__text">Fondation Cartier Pass = <strong>18€ - 50€</strong></li>
+                                <li class="liste__text">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants = <strong>Gratuit</strong></li>
+                            </ul>
                         </div>
 
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
-                    </div>
-
-                    <div class="oeuvre__article">
-                        <p class="oeuvre__article--text">Dans <strong>Painterly Architectonic</strong>, <a href="/fr/pages_artistes/lioubov_popova.html" class="link">Popova</a> a disposé des zones de blanc, rouge, noir, gris et rose pour suggérer des plans posés l’un sur l’autre sur un fond blanc, comme des papiers de formes différentes dans un collage. L’espace n’est pas complètement plat, cependant, car le bord inférieur arrondi du plan gris implique que cette surface est arquée vers le haut contre le triangle rouge. Cette pression trouve des correspondances dans les formes et les emplacements des plans, qui évitent les angles droits et les lignes verticales ou horizontales, de sorte que l’image devient un filet tendu d’inclinaisons et de diagonales. Influencée par ses visites en Europe occidentale avant la Première Guerre mondiale, Popova a contribué à introduire dans l’art russe les idées cubistes et futuristes qu’elle a rencontrées en France et en Italie. Son modèle d’abstraction est sous-entendu par l’utilisation du terme « architectonique » : traitant les plans presque comme des entités matérielles solides, Popova construit une composition monumentale centrée sur les interrelations entre les parties individuelles. En 1916, Popova est devenu une <a href="/fr/suprematisme.html" class="link">suprématiste</a>, un terme inventé l’année précédente par l’artiste <a href="/fr/pages_artistes/kasamir_malevich.html" class="link">Kazimir Malevitch</a> pour décrire un art qui a rejeté la dévotion historique de la peinture à la représentation, se concentrant plutôt sur la suprématie du sentiment artistique pur. Dans le sillage de la révolution russe, en 1917, de nombreux artistes ont repris l’objectif de Malevitch, croyant qu’une société révolutionnaire exigeait un langage artistique radicalement nouveau.</p>
-                    </div>
-
-                    <div class="oeuvre__annexe annexe">
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
-
-                        <figure class="annexe__illustration">
-                            <a href="/fr/pages_artistes/lioubov_popova.html">
-                                <img src="/public/img/Lyubov_Popova.webp" alt="photo de Liubov Popova" class="annexe__illustration--img">
-                            </a>
-
-                            <figcaption class="legend">Liubov Popova - Créatrice de cette oeuvre</figcaption>
-                        </figure>
-
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
+                        <a class="button" href="#">
+                            <p class="button__text">Billetterie</p>
+                            <img src="/public/img/arrow.webp" alt="logo arrow" class="button__img">
+                        </a>
                     </div>
                 </article>
             </section>
@@ -84,7 +96,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
         <footer class="footer">
 
             <div class="link__logo">
-                <a href="/en/index.html" onclick="document.cookie = 'nf_lang=en; path=/'">
+                <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'">
                     <img src="/public/img/Anglais.webp" alt="logo changment de langue" class="link__logo--img2">
                 </a>
 

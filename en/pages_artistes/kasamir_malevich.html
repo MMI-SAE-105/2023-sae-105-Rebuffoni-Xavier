@@ -11,7 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
-        <link rel="stylesheet" href="/src/css/pages/oeuvre.css">
+        <link rel="stylesheet" href="/src/css/pages/artiste.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -45,37 +45,35 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main class="oeuvre">
+        <main class="artiste">
             <section>
                 <article>
-                    <div class="oeuvre__head head">
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
+                    <header class="artiste__intro">
+                        <img src="/public/img/Casimir_Malevich.webp" alt="photo Kasimir Malevich" class="artiste__intro--imgprincipale">
+                    </header>   
 
-                        <div class="head__intro">
-                            <img src="/public/img/painterly-architectonic.webp" alt="peinture Painterly Architectonic" class="head__intro--img">
+                    <div class="artiste__article">
+                        <h1 class="artiste__article--title">Kasimir Malevich</h1>
 
-                            <h1 class="head__intro--title">Painterly Archi-tectonic</h1>
-                        </div>
-
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
+                        <p class="artiste__article--text"><strong>Kasimir Severinovitch Malevitch</strong>, né le 11 février 1879 à Kiev (Empire russe), de parents polonais, et mort le 15 mai 1935 à Léningrad, à l'âge de 56 ans, d'un cancer, est un des premiers artistes abstraits du xxe siècle. Peintre, dessinateur, sculpteur et théoricien, Malevitch est le créateur d'un courant artistique qu'il dénomma « <a href="/fr/suprematisme.html" class="link">suprématisme</a> ».</p>
                     </div>
 
-                    <div class="oeuvre__article">
-                        <p class="oeuvre__article--text">Dans <strong>Painterly Architectonic</strong>, <a href="/fr/pages_artistes/lioubov_popova.html" class="link">Popova</a> a disposé des zones de blanc, rouge, noir, gris et rose pour suggérer des plans posés l’un sur l’autre sur un fond blanc, comme des papiers de formes différentes dans un collage. L’espace n’est pas complètement plat, cependant, car le bord inférieur arrondi du plan gris implique que cette surface est arquée vers le haut contre le triangle rouge. Cette pression trouve des correspondances dans les formes et les emplacements des plans, qui évitent les angles droits et les lignes verticales ou horizontales, de sorte que l’image devient un filet tendu d’inclinaisons et de diagonales. Influencée par ses visites en Europe occidentale avant la Première Guerre mondiale, Popova a contribué à introduire dans l’art russe les idées cubistes et futuristes qu’elle a rencontrées en France et en Italie. Son modèle d’abstraction est sous-entendu par l’utilisation du terme « architectonique » : traitant les plans presque comme des entités matérielles solides, Popova construit une composition monumentale centrée sur les interrelations entre les parties individuelles. En 1916, Popova est devenu une <a href="/fr/suprematisme.html" class="link">suprématiste</a>, un terme inventé l’année précédente par l’artiste <a href="/fr/pages_artistes/kasamir_malevich.html" class="link">Kazimir Malevitch</a> pour décrire un art qui a rejeté la dévotion historique de la peinture à la représentation, se concentrant plutôt sur la suprématie du sentiment artistique pur. Dans le sillage de la révolution russe, en 1917, de nombreux artistes ont repris l’objectif de Malevitch, croyant qu’une société révolutionnaire exigeait un langage artistique radicalement nouveau.</p>
-                    </div>
-
-                    <div class="oeuvre__annexe annexe">
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
-
-                        <figure class="annexe__illustration">
-                            <a href="/fr/pages_artistes/lioubov_popova.html">
-                                <img src="/public/img/Lyubov_Popova.webp" alt="photo de Liubov Popova" class="annexe__illustration--img">
+                    <div class="artiste__oeuvre oeuvre">
+                        <figure class="oeuvre__1">
+                            <a href="/fr/oeuvres/suprematist_composition.html">
+                                <img src="/public/img/ellipse_suprematist.webp" alt="ellipse avec tableau Suprematist Composition" class="oeuvre__1--img">
                             </a>
 
-                            <figcaption class="legend">Liubov Popova - Créatrice de cette oeuvre</figcaption>
+                            <figcaption class="legend">Suprematist Composition - 1915/1916</figcaption>
                         </figure>
 
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
+                        <figure class="oeuvre__2">
+                            <a href="/fr/oeuvres/carre.html">
+                                <img src="/public/img/ellipse_carre-noir.webp" alt="ellipse avec tableau Carré sur fond blanc" class="oeuvre__2--img">
+                            </a>
+                                
+                            <figcaption class="legend">Carré sur fond blanc - 1915</figcaption>
+                        </figure>
                     </div>
                 </article>
             </section>
@@ -84,7 +82,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
         <footer class="footer">
 
             <div class="link__logo">
-                <a href="/en/index.html" onclick="document.cookie = 'nf_lang=en; path=/'">
+                <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'">
                     <img src="/public/img/Anglais.webp" alt="logo changment de langue" class="link__logo--img2">
                 </a>
 

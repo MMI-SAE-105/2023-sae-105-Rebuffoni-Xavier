@@ -1,17 +1,122 @@
 <!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <title>Supr'Expo</title>
 
-<title>404 - Page Non trouvée</title>
+        <link rel="icon" href="/public/img/logo_site.webp">
+        <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/404.css">
 
-<h1>Page Non trouvée</h1>
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
 
-<form action="https://www.google.fr/" method="GET"
-    x-data="{ q:'', }" 
-    x-on:submit="q = q + ">
-    <label for="q">Text à chercher :</label>
-    
-    <input type="text" id="q" name="q" x-model="q">
+    <body>
+        <header class="header">
+            <a href="/fr/index.html" class="header__logo">
+                <img src="/public/img/logo_site.webp" alt="logo site" class="header__logo--img">
+            </a>
 
-    <button type="submit">Rechercher</button>
-</form>
+            <button aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIsOpen"
+            class="header__btn"
+            >
+                <img src="/public/img/logo_menu.webp" alt="logo menu" class="header__btn--menu">
+            </button>
+
+            <nav id="mainNav"
+            x-show="menuIsOpen"
+            class="header__menu menu"
+            >
+                <button class="menu__close" @click="menuIsOpen= ! menuIsOpen">
+                    <img class="menu__close--img" src="/public/img/Croix.webp" alt="Image bouton pour fermer le menu">
+                </button>
+
+                <ul class="menu__items items">
+                    <li class="items__li1"><a href="/fr/exposition.html" class="items__li1--title">Supr'Expo</a></li>
+                    <li class="items__li2"><a href="#" class="items__li2--title">Billetterie</a></li>
+                    <li class="items__li3"><a href="/fr/suprematisme.html" class="items__li3--title">Suprematisme</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Page Non trouvée</h1>
+
+                <form action="https://www.google.fr/" method="GET"
+                    x-data="{ q:'', }" 
+                    x-on:submit="q = q + site'https://supr-expo.rebuffoni.fr'">
+                    <label for="q">Text à chercher :</label>
+                    
+                    <input type="text" id="q" name="q" x-model="q">
+
+                    <button type="submit">Rechercher</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+
+            <div class="link__logo">
+                <a href="/en/index.htm" onclick="document.cookie = 'nf_lang=en; path=/'">
+                    <img src="/public/img/Anglais.webp" alt="logo changment de langue" class="link__logo--img2">
+                </a>
+
+                <a href="https://www.fondationcartier.com/">
+                    <img src="/public/img/logo_cartier.webp" alt="logo Fondation Cartier" class="link__logo--img">
+                </a>
+
+                <a href="/fr/index.html" class="link__">
+                    <img src="/public/img/logo_site.webp" alt="logo site" class="link__logo--img">
+                </a>
+            </div>
+
+            <div class="footer__link link">
+                <h5 class="footer__title1">Nous suivre</h5>
+
+                <ul class="link__nav nav">
+                    <li class="nav__items">
+                        <a href="#">
+                            <img src="/public/img/mail.webp" alt="logo mail" class="nav__items--img">
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#">
+                            <img src="/public/img/instagram.webp" alt="logo instagram" class="nav__items--img">
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#">
+                            <img src="/public/img/youtube.webp" alt="logo youtube" class="nav__items--img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer__nav nav">
+                <a href="/fr/contact.html" class="nav__link">
+                    <h5 class="nav__link--title">Contact</h5>
+                </a>
+            </nav>
+
+            <div class="footer__legal legal">
+                <h5 class="legal__title">Mentions Légales</h5>
+
+                <div class="legal__div div">
+                    <p class="div__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+
+                    <img src="/public/img/logo_MMI.webp" alt="logo MMI" class="div__img">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
