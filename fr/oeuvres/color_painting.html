@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/oeuvre.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -40,35 +41,37 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="oeuvre">
             <section>
                 <article>
-                    <div>
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                    <div class="oeuvre__head head">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
 
-                        <div>
-                            <img src="/public/img/color-painting.webp" alt="peinture Color Painting">
+                        <div class="head__intro">
+                            <img src="/public/img/color-painting.webp" alt="peinture Color Painting" class="head__intro--img">
 
-                            <h1>Color Painting</h1>
+                            <h1 class="head__intro--title">Color Painting</h1>
                         </div>
 
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
                     </div>
 
-                    <div>
-                        <p></p>
+                    <div class="oeuvre__article">
+                        <p class="oeuvre__article--text"></p>
                     </div>
 
-                    <div>
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                    <div class="oeuvre__annexe annexe">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
 
-                        <figure>
-                            <img src="/public/img/Olga_Rozanova.webp" alt="photo de Olga Rozanova">
+                        <figure class="annexe__illustration">
+                            <a href="/fr/pages_artistes/olga_rozanova.html">
+                                <img src="/public/img/Olga_Rozanova.webp" alt="photo de Olga Rozanova" class="annexe__illustration--img">
+                            </a>
 
-                            <figcaption>Olga Rozanova - Créatrice de cette oeuvre</figcaption>
+                            <figcaption class="legend">Olga Rozanova - Créatrice de cette oeuvre</figcaption>
                         </figure>
 
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
                     </div>
                 </article>
             </section>

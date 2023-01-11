@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/oeuvre.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -40,35 +41,37 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="oeuvre">
             <section>
                 <article>
-                    <div>
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                    <div class="oeuvre__head head">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
 
-                        <div>
-                            <img src="/public/img/suprematist.webp" alt="peinture Suprematist Composition">
+                        <div class="head__intro">
+                            <img src="/public/img/suprematist.webp" alt="peinture Suprematist Composition" class="head__intro--img">
 
-                            <h1>Suprematist Composition</h1>
+                            <h1 class="head__intro--title">Suprematist Composition</h1>
                         </div>
 
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
                     </div>
 
-                    <div>
-                        <p>Oeuvres réalisées par Kasamir Malevich en 1915/1916. Elle s’inscrit dans le mouvement artistique du Suprematism.</p>
+                    <div class="oeuvre__article">
+                        <p class="oeuvre__article--text">Oeuvres réalisées par Kasamir Malevich en 1915/1916. Elle s’inscrit dans le mouvement artistique du Suprematism.</p>
                     </div>
 
-                    <div>
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                    <div class="oeuvre__annexe annexe">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
 
-                        <figure>
-                            <img src="/public/img/Casimir_Malevich.webp" alt="photo de Kasimir Malevich">
+                        <figure class="annexe__illustration">
+                            <a href="/fr/pages_artistes/kasamir_malevich.html">
+                                <img src="/public/img/Casimir_Malevich.webp" alt="photo de Kasimir Malevich" class="annexe__illustration--img">
+                            </a>
 
-                            <figcaption>Kasimir Malevich - Créateur de cette oeuvre</figcaption>
+                            <figcaption class="legend">Kasimir Malevich - Créateur de cette oeuvre</figcaption>
                         </figure>
 
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
                     </div>
                 </article>
             </section>

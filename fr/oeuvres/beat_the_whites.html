@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/oeuvre.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -40,35 +41,37 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="oeuvre">
             <section>
                 <article>
-                    <div>
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                    <div class="oeuvre__head head">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
 
-                        <div>
-                            <img src="/public/img/beat-the-whites-with-the-red.webp" alt="peinture Beat the Whites with the Red Wedge">
+                        <div class="head__intro">
+                            <img src="/public/img/beat-the-whites-with-the-red.webp" alt="peinture Beat the Whites with the Red Wedge" class="head__intro--img">
 
-                            <h1>Beat the Whites with the Red Wedge</h1>
+                            <h1 class="head__intro--title">Beat the Whites with the Red Wedge</h1>
                         </div>
 
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
                     </div>
 
-                    <div>
-                        <p>Beat the Whites with the Red Wedge ou "Battre les Blancs avec le coin rouge" en français est une affiche de propagande de Lazar Markovitch Lissitzky, créée en 1919 dans le contexte de la guerre civile russe. Le triangle rouge symbolise les bolcheviks attaquant l'Armée blanche, représenté par le disque placé sur le fond noir, le camp des contre-révolutionnaires. Inspirée par les tableaux suprématistes de Kasimir Malevitch, sa typographie, qui annonce les travaux du Proun, l'en distingue par un langage concret. Cette œuvre inspire paradoxalement l’affiche de l'exposition munichoise de 1937 consacrée à « l'art dégénéré », alors même que Lissitky compte parmi les artistes conspués par l'événement et le régime nazi.</p>
+                    <div class="oeuvre__article">
+                        <p class="oeuvre__article--text">Beat the Whites with the Red Wedge ou "Battre les Blancs avec le coin rouge" en français est une affiche de propagande de Lazar Markovitch Lissitzky, créée en 1919 dans le contexte de la guerre civile russe. Le triangle rouge symbolise les bolcheviks attaquant l'Armée blanche, représenté par le disque placé sur le fond noir, le camp des contre-révolutionnaires. Inspirée par les tableaux suprématistes de Kasimir Malevitch, sa typographie, qui annonce les travaux du Proun, l'en distingue par un langage concret. Cette œuvre inspire paradoxalement l’affiche de l'exposition munichoise de 1937 consacrée à « l'art dégénéré », alors même que Lissitky compte parmi les artistes conspués par l'événement et le régime nazi.</p>
                     </div>
 
-                    <div>
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                    <div class="oeuvre__annexe annexe">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
 
-                        <figure>
-                            <img src="/public/img/lissitzky.webp" alt="photo de Lazar Lissitzky">
+                        <figure class="annexe__illustration">
+                            <a href="/fr/pages_artistes/lazar_lissitzky.html">
+                                <img src="/public/img/lissitzky.webp" alt="photo de Lazar Lissitzky" class="annexe__illustration--img">
+                            </a>
 
-                            <figcaption>Lazar Lissitzky - Créateur de cette oeuvre</figcaption>
+                            <figcaption class="legend">Lazar Lissitzky - Créateur de cette oeuvre</figcaption>
                         </figure>
 
-                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré">
+                        <img src="/public/img/carre_2.webp" alt="ronds formant un carré" class="cube">
                     </div>
                 </article>
             </section>
