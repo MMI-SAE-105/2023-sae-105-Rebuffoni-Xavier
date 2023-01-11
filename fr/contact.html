@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/contact.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -75,15 +76,19 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
                     <div class="formulaire__champs">
                         <label for="Message" class="formulaire__champs--title">Message</label>
-                        <textarea id="Message" name="message" rows="5" class="formulaire__champs--texte"></textarea>
+                        <textarea id="Message" name="message" rows="5" class="formulaire__champs--message"></textarea>
                     </div>
 
-                    <button type="submit" class="formulaire__button">Envoyer</button>
+                    <button type="submit" class="button">
+                        <a href="/fr/suprematisme.html" class="button__click">
+                            <p class="button__click--text">Envoyer</p>
+                        </a>
+                    </button>
                 </form>
 
                 <div class="legend">
                     <aside class="legend__obligatoire">(*)</aside>
-                    <p>Champs obligatoires</p>
+                    <p class="legend__text">Champs obligatoires</p>
                 </div>
             </section>
         </main>
