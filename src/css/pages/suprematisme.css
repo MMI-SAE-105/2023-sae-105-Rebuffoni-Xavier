@@ -34,3 +34,7 @@
     margin-left: 6.5rem;
     transform: rotate(-42.49deg);
 }
+
+.link {
+    color: var(--pied-de-page);
+}
