@@ -36,6 +36,7 @@ strong {
 }
 
 .button {
+    width: 50%;
     margin: 0;
     padding: 0;
     margin-bottom: 1rem;
@@ -51,7 +52,7 @@ strong {
     gap: 0.5rem;
 }
 
-.button__click {
+.button__text {
     margin: 0;
     padding: 5px;
     font-family: 'Bowlby One SC', cursive;
@@ -62,7 +63,7 @@ strong {
     color: var(--couleur-dominante);
 }
 
-.button__click--img {
+.button__img {
     margin: 0;
     padding: 5px;
     width: 38px;
