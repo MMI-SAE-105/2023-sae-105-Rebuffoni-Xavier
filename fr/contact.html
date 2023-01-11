@@ -44,37 +44,45 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="contact">
             <section>
-                <header>
-                    <h1>FORMULAIRE DE CONTACT</h1>
-                    <p>N'hésitez pas à rester en contact avec nous via ce formulaire.</p>
+                <header class="contact__intro">
+                    <h1 class="contact__intro--title">FORMULAIRE DE CONTACT</h1>
+
+                    <p class="contact__intro--text">Remplissez ce formulaire pour être inscris à notre newsletter.</p>
                 </header>
-                <form action="#">
-                    <div>
-                        <label for="Nom">Nom <aside>*</aside></label>
-                        <input type="text" name="Nom" id="Nom">
+
+                <form action="#" class="contact__formulaire formulaire">
+                    <div class="formulaire__champs">
+                        <label for="Nom" class="formulaire__champs--title">Nom <aside class="legend__obligatoire">*</aside></label>
+                        <input type="text" name="Nom" id="Nom" class="formulaire__champs--texte">
                     </div>
-                    <div>
-                        <label for="Prénom">Prénom <aside>*</aside></label>
-                        <input type="text" name="Prénom" id="Prénom">
+
+                    <div class="formulaire__champs">
+                        <label for="Prénom" class="formulaire__champs--title">Prénom <aside class="legend__obligatoire">*</aside></label>
+                        <input type="text" name="Prénom" id="Prénom" class="formulaire__champs--texte">
                     </div>
-                    <div>
-                        <label for="Mail">Mail <aside>*</aside></label>
-                        <input type="text" name="Mail" id="Mail">
+
+                    <div class="formulaire__champs">
+                        <label for="Mail" class="formulaire__champs--title">Mail <aside class="legend__obligatoire">*</aside></label>
+                        <input type="text" name="Mail" id="Mail" class="formulaire__champs--texte">
                     </div>
-                    <div>
-                        <label for="Téléphone">Téléphone <aside>*</aside></label>
-                        <input type="text" name="Téléphone" id="Téléphone">
+
+                    <div class="formulaire__champs">
+                        <label for="Téléphone" class="formulaire__champs--title">Téléphone <aside class="legend__obligatoire">*</aside></label>
+                        <input type="text" name="Téléphone" id="Téléphone" class="formulaire__champs--texte">
                     </div>
-                    <div>
-                        <label for="Message">Message</label>
-                        <textarea id="Message" name="message" rows="5"></textarea>
+
+                    <div class="formulaire__champs">
+                        <label for="Message" class="formulaire__champs--title">Message</label>
+                        <textarea id="Message" name="message" rows="5" class="formulaire__champs--texte"></textarea>
                     </div>
-                    <button type="submit">Envoyer</button>
+
+                    <button type="submit" class="formulaire__button">Envoyer</button>
                 </form>
-                <div>
-                    <aside>(*)</aside>
+
+                <div class="legend">
+                    <aside class="legend__obligatoire">(*)</aside>
                     <p>Champs obligatoires</p>
                 </div>
             </section>
