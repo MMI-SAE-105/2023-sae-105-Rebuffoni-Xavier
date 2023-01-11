@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/suprematisme.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -40,18 +41,225 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="suprematisme">
             <section>
                 <article>
-                    <h1>Suprématisme</h1>
+                    <h1 class="suprematisme__title">Suprématisme</h1>
 
-                    <p>Le suprématisme est un mouvement d'art moderne, né en Russie, au début du XXe siècle. Son « créateur » est Kasimir Malevitch (1878-1935), qui présente en 1915 un premier ensemble de 39 tableaux suprématistes lors de la « Dernière exposition futuriste de tableaux 0.10 (zéro-dix) », tenue à Pétrograd du 19 décembre 1915 au 19 janvier 1916. En fait partie Quadrangle, surtout connu comme Carré noir sur fond blanc, que Malevitch forgera plus tard en œuvre emblème du suprématisme.</p>
+                    <p class="suprematisme__intro">Le suprématisme est un mouvement d'art moderne, né en Russie, au début du XXe siècle. Son « créateur » est Kasimir Malevitch (1878-1935), qui présente en 1915 un premier ensemble de 39 tableaux suprématistes lors de la « Dernière exposition futuriste de tableaux 0.10 (zéro-dix) », tenue à Pétrograd du 19 décembre 1915 au 19 janvier 1916. En fait partie Quadrangle, surtout connu comme Carré noir sur fond blanc, que Malevitch forgera plus tard en œuvre emblème du suprématisme.</p>
 
                     <h2>Les artistes</h2>
 
+                    <div class="home__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
+
+                        <button class="carrousel_btn carrousel_btn-avant"
+                            aria-label="slide précedant" 
+                            @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                            <
+                        </button>
+                        <button class="carrousel_btn carrousel_btn-apres"
+                            aria-label="slide suivant" 
+                            @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                            >
+                        </button>
+
+                        <div class="carrousel_parent-ecrans" 
+                            x-ref="parent" @scroll.debounce.250ms.passive="
+                        hrefCourant = '#'+
+                                        [...$refs.parent.children]
+                                        .find(e=>e.getBoundingClientRect().x>=0)
+                                        .id
+                                                            ">
+                            
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Casimir_Malevich.webp" alt="Photo de Kasimir Malevich" class="carrousel__ecran--img">
+                                </figure>
+
+                                <button class="button">
+                                    <a href="/fr/suprematisme.html" class="button__click">
+                                        <p class="button__click--text">Kasimir Malevich</p>
+                                        <img src="/public/img/arrow.webp" alt="logo arrow" class="button__click--img">
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/lissitzky.webp" alt="Photo de Lazar Lissitzky" class="carrousel__ecran--img">
+                                </figure>
+
+                                <button class="button">
+                                    <a href="/fr/suprematisme.html" class="button__click">
+                                        <p class="button__click--text">Lazar Lissitzky</p>
+                                        <img src="/public/img/arrow.webp" alt="logo arrow" class="button__click--img">
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Lyubov_Popova.webp" alt="Photo de Lyubov Popova" class="carrousel__ecran--img">
+                                </figure>
+
+                                <button class="button">
+                                    <a href="/fr/suprematisme.html" class="button__click">
+                                        <p class="button__click--text">Lyubov Popova</p>
+                                        <img src="/public/img/arrow.webp" alt="logo arrow" class="button__click--img">
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div id="ecran-4" class="carrousel_ecran">
+                                <figure>
+                                    <img src="/public/img/Olga_Rozanova.webp" alt="Photo de Olga Rozanova" class="carrousel__ecran--img">
+                                </figure>
+
+                                <button class="button">
+                                    <a href="/fr/suprematisme.html" class="button__click">
+                                        <p class="button__click--text">Olga Rozanova</p>
+                                        <img src="/public/img/arrow.webp" alt="logo arrow" class="button__click--img">
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <h2>Les oeuvres</h2>
 
-                    
+                    <div class="home__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
+
+                        <button class="carrousel_btn carrousel_btn-avant"
+                            aria-label="slide précedant" 
+                            @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                            <
+                        </button>
+                        <button class="carrousel_btn carrousel_btn-apres"
+                            aria-label="slide suivant" 
+                            @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                            >
+                        </button>
+
+                        <div class="carrousel_parent-ecrans" 
+                            x-ref="parent" @scroll.debounce.250ms.passive="
+                        hrefCourant = '#'+
+                                        [...$refs.parent.children]
+                                        .find(e=>e.getBoundingClientRect().x>=0)
+                                        .id
+                                                            ">
+                            
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <img src="/public/img/abstract-composition.webp" alt="Peinture Abstract Composition" class="carrousel__ecran--img">
+
+                                <div class="frise">
+                                    <div class="frise__item">
+                                        <img src="/public/img/ellipse_abstract-composition.webp" alt="Ellispe peinture Abstract Composition" class="frise__item--img">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                    </div>
+                                    <p class="frise__text">1910</p>
+                                    <p class="frise__text">Abstract Composition</p>
+                                </div>
+                            </div>
+
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <img src="/public/img/carre_noir_fond_blanc.webp" alt="Peinture Carré noir sur fond blanc" class="carrousel__ecran--img">
+
+                                <div class="frise">
+                                    <div class="frise__item">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                        <img src="/public/img/ellipse_carre-noir.webp" alt="Ellispe peinture Carré noir sur fond blanc" class="frise__item--img">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                    </div>
+                                    <p class="frise__text">1915</p>
+                                    <p class="frise__text">Carré noir sur fond blanc</p>
+                                </div>
+                            </div>
+
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <img src="/public/img/the-traveler.webp" alt="Peinture The Travelers" class="carrousel__ecran--img">
+
+                                <div class="frise">
+                                    <div class="frise__item">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                        <img src="/public/img/ellipse_travelers.webp" alt="Ellispe peinture The Travelers" class="frise__item--img">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                    </div>
+                                    <p class="frise__text">1916</p>
+                                    <p class="frise__text">The Travelers</p>
+                                </div>
+                            </div>
+
+                            <div id="ecran-4" class="carrousel_ecran">
+                                <img src="/public/img/suprematist.webp" alt="Peinture Suprematist Composition" class="carrousel__ecran--img">
+
+                                <div class="frise">
+                                    <div class="frise__item">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                        <img src="/public/img/ellipse_suprematist.webp" alt="Ellispe peinture Suprematist Composition" class="frise__item--img">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                    </div>
+                                    <p class="frise__text">1916</p>
+                                    <p class="frise__text">Suprematist Composition</p>
+                                </div>
+                            </div>
+
+                            <div id="ecran-5" class="carrousel_ecran">
+                                <img src="/public/img/color-painting.webp" alt="Peinture Color Painting" class="carrousel__ecran--img">
+
+                                <div class="frise">
+                                    <div class="frise__item">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                        <img src="/public/img/ellipse_painting.webp" alt="Ellispe peinture Color Painting" class="frise__item--img">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                    </div>
+                                    <p class="frise__text">1917</p>
+                                    <p class="frise__text">Color Painting</p>
+                                </div>
+                            </div>
+
+                            <div id="ecran-6" class="carrousel_ecran">
+                                <img src="/public/img/painterly-architectonic.webp" alt="Peinture Painterly Architectonic" class="carrousel__ecran--img">
+
+                                <div class="frise">
+                                    <div class="frise__item">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                        <img src="/public/img/ellipse_architectonic.webp" alt="Ellispe peinture Painterly Architectonic" class="frise__item--img">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                    </div>
+                                    <p class="frise__text">1918</p>
+                                    <p class="frise__text">Painterly Architectonic</p>
+                                </div>
+                            </div>
+
+                            <div id="ecran-7" class="carrousel_ecran">
+                                <img src="/public/img/beat-all-the-scattered.webp" alt="Peinture Beat all the scattered" class="carrousel__ecran--img">
+
+                                <div class="frise">
+                                    <div class="frise__item">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                        <img src="/public/img/ellipse_bear-all-the-scared.webp" alt="Ellispe peinture Beat all the scattered" class="frise__item--img">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                    </div>
+                                    <p class="frise__text">1920</p>
+                                    <p class="frise__text">Beat all the scattered</p>
+                                </div>
+                            </div>
+
+                            <div id="ecran-8" class="carrousel_ecran">
+                                <img src="/public/img/beat-the-whites-with-the-red.webp" alt="Peinture Beat the Whites with the Red Wedge" class="carrousel__ecran--img">
+
+                                <div class="frise">
+                                    <div class="frise__item">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                        <img src="/public/img/ellipse_beat-the_whites.webp" alt="Ellispe peinture Beat the Whites with the Red Wedge" class="frise__item--img">
+                                        <img src="/public/img/Line.webp" alt="icone ligne" class="frise__item--line">
+                                    </div>
+                                    <p class="frise__text">1920</p>
+                                    <p class="frise__text">Beat the Whites with the Red Wedge</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
         </main>

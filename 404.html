@@ -8,7 +8,7 @@
 
 <form action="https://www.google.fr/" method="GET"
     x-data="{ q:'', }" 
-    x-on:submit="q">
+    x-on:submit="q = q + ">
     <label for="q">Text à chercher :</label>
     
     <input type="text" id="q" name="q" x-model="q">
