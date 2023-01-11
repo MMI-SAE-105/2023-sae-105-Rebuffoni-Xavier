@@ -76,6 +76,7 @@
     cursor: pointer;
     display: grid;
     place-content: center;
+    z-index: 1;
 }
 
 .overlay::after {
