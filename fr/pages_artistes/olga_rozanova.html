@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/artiste.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -40,32 +41,34 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="artiste">
             <section>
                 <article>
-                    <img src="/public/img/Olga_Rozanova.webp" alt="photo Olga Rozanova">
-
-                    <header>
-                        <h1>Olga Rozanova</h1>
-
-                        <p>Olga Vladimirovna Rozanova, née en 1886 à Melenki près de Vladimir et morte le 7 novembre 1918 à Moscou, est une artiste représentative de l'avant-garde russe, à la fois peintre et sculptrice, proche du mouvement suprématiste.</p>
+                    <header class="artiste__intro">
+                        <img src="/public/img/Olga_Rozanova.webp" alt="photo Olga Rozanova" class="artiste__intro--imgprincipale">
                     </header>
 
-                    <div>
-                        <figure>
+                    <div class="artiste__article">
+                        <h1 class="artiste__article--title">Olga Rozanova</h1>
+
+                        <p class="artiste__article--text"><strong>Olga Vladimirovna Rozanova</strong>, née en 1886 à Melenki près de Vladimir et morte le 7 novembre 1918 à Moscou, est une artiste représentative de l'avant-garde russe, à la fois peintre et sculptrice, proche du mouvement <a href="/fr/suprematisme.html" class="link">suprématiste</a>.</p>
+                    </div>
+
+                    <div class="artiste__oeuvre oeuvre">
+                        <figure class="oeuvre__1">
                             <a href="/fr/oeuvres/abstract_composition.html">
-                                <img src="/public/img/ellipse_abstract-composition.webp" alt="ellipse avec tableau Abstract Composition">
+                                <img src="/public/img/ellipse_abstract-composition.webp" alt="ellipse avec tableau Abstract Composition" class="oeuvre__1--img">
                             </a>
 
-                            <figcaption>Abstract Composition - 1910</figcaption>
+                            <figcaption class="legend">Abstract Composition - 1910</figcaption>
                         </figure>
 
-                        <figure>
+                        <figure class="oeuvre__2">
                             <a href="/fr/oeuvres/color_painting.html">
-                                <img src="/public/img/ellipse_painting.webp" alt="ellipse avec tableau Color Painting">
+                                <img src="/public/img/ellipse_painting.webp" alt="ellipse avec tableau Color Painting" class="oeuvre__2--img">
                             </a>
                                 
-                            <figcaption>Color Painting - 1917</figcaption>
+                            <figcaption class="legend">Color Painting - 1917</figcaption>
                         </figure>
                     </div>
                 </article>

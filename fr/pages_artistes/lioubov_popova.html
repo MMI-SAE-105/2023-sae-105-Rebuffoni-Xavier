@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/artiste.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -40,32 +41,34 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="artiste">
             <section>
                 <article>
-                    <img src="/public/img/Lyubov_Popova.webp" alt="photo Liubov Popova">
-
-                    <header>
-                        <h1>Liubov Popova</h1>
-
-                        <p>Lioubov Sergueïevna Popova, née à Ivanovskoïe, est une styliste et peintre constructiviste, suprématiste et cubo-futuristes russe. Membre de l'avant-garde russe, elle se distingue par ses compositions futuristes et architectoniques, dans le sillage des Malevich, et quelques autres artistes femmes, Natalia Gontcharova, Olga Rozanova, Varvara Stepanova et Alexandra Exter.</p>
+                    <header class="artiste__intro">
+                        <img src="/public/img/Lyubov_Popova.webp" alt="photo Liubov Popova" class="artiste__intro--imgprincipale">
                     </header>
 
-                    <div>
-                        <figure>
+                    <div class="artiste__article">
+                        <h1 class="artiste__article--title">Liubov Popova</h1>
+
+                        <p class="artiste__article--text"><strong>Lioubov Sergueïevna Popova</strong>, née à Ivanovskoïe, est une styliste et peintre constructiviste, <a href="/fr/suprematisme.html" class="link">suprématiste</a> et cubo-futuristes russe. Membre de l'avant-garde russe, elle se distingue par ses compositions futuristes et architectoniques, dans le sillage de <a href="/fr/pages_artistes/kasamir_malevich.html" class="link">Malevich</a>, et quelques autres artistes femmes, Natalia Gontcharova, <a href="/fr/pages_artistes/olga_rozanova.html" class="link">Olga Rozanova</a>, Varvara Stepanova et Alexandra Exter.</p>
+                    </div>
+
+                    <div class="artiste__oeuvre oeuvre">
+                        <figure class="oeuvre__1">
                             <a href="/fr/oeuvres/the_traveler.html">
-                                <img src="/public/img/ellipse_travelers.webp" alt="ellipse avec tableau The Traveler">
+                                <img src="/public/img/ellipse_travelers.webp" alt="ellipse avec tableau The Traveler" class="oeuvre__1--img">
                             </a>
 
-                            <figcaption>The Traveler - 1916</figcaption>
+                            <figcaption class="legend">The Traveler - 1916</figcaption>
                         </figure>
 
-                        <figure>
+                        <figure class="oeuvre__2">
                             <a href="/fr/oeuvres/painterly_architectonic.html">
-                                <img src="/public/img/ellipse_architectonic.webp" alt="ellipse avec tableau Painterly Architectonic">
+                                <img src="/public/img/ellipse_architectonic.webp" alt="ellipse avec tableau Painterly Architectonic" class="oeuvre__2--img">
                             </a>
                                 
-                            <figcaption>Painterly Architectonic - 1918</figcaption>
+                            <figcaption class="legend">Painterly Architectonic - 1918</figcaption>
                         </figure>
                     </div>
                 </article>

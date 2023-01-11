@@ -11,6 +11,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <link rel="icon" href="/public/img/logo_site.webp">
         <link rel="stylesheet" href="/src/css/pages/style.css">
+        <link rel="stylesheet" href="/src/css/pages/artiste.css">
 
         <script defer src="https://unpkg.com/alpinejs"></script>
     </head>
@@ -40,32 +41,34 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </nav>
         </header>
 
-        <main>
+        <main class="artiste">
             <section>
                 <article>
-                    <img src="/public/img/lissitzky.webp" alt="photo Lazar Lissitzky">
-
-                    <header>
-                        <h1>Lazar Lissitzky</h1>
-
-                        <p>Lazar Markovitch Lissitzky, né à Potchinok le 23 novembre 1890 et mort à Moscou le 30 décembre 1941 est un peintre d'avant-garde russe, également designer, photographe (travaillant notamment sur les photogrammes), typographe, et architecte.</p>
+                    <header class="artiste__intro">
+                        <img src="/public/img/lissitzky.webp" alt="photo Lazar Lissitzky" class="artiste__intro--imgprincipale">
                     </header>
 
-                    <div>
-                        <figure>
+                    <div class="artiste__article">
+                        <h1 class="artiste__article--title">Lazar Lissitzky</h1>
+
+                        <p class="artiste__article--text"><strong>Lazar Markovitch Lissitzky</strong>, né à Potchinok le 23 novembre 1890 et mort à Moscou le 30 décembre 1941 est un peintre d'avant-garde russe, également designer, photographe (travaillant notamment sur les photogrammes), typographe, et architecte. Il fait également partis du mouvement des <a href="/fr/suprematisme.html" class="link">Suprématistes</a>.</p>
+                    </div>
+
+                    <div class="artiste__oeuvre oeuvre">
+                        <figure class="oeuvre__1">
                             <a href="/fr/oeuvres/beat_all_the_scattered.html">
-                                <img src="/public/img/ellipse_bear-all-the-scared.webp" alt="ellipse avec tableau Beat all the scattered">
+                                <img src="/public/img/ellipse_bear-all-the-scared.webp" alt="ellipse avec tableau Beat all the scattered" class="oeuvre__1--img">
                             </a>
 
-                            <figcaption>Beat all the scattered - 1920</figcaption>
+                            <figcaption class="legend">Beat all the scattered - 1920</figcaption>
                         </figure>
 
-                        <figure>
+                        <figure class="oeuvre__2">
                             <a href="/fr/oeuvres/beat_the_whites.html">
-                                <img src="/public/img/ellipse_beat-the_whites.webp" alt="ellipse avec tableau Beat the Whites with the Red Wedge">
+                                <img src="/public/img/ellipse_beat-the_whites.webp" alt="ellipse avec tableau Beat the Whites with the Red Wedge" class="oeuvre__2--img">
                             </a>
                                 
-                            <figcaption>Beat the Whites with the Red Wedge - 1920</figcaption>
+                            <figcaption class="legend">Beat the Whites with the Red Wedge - 1920</figcaption>
                         </figure>
                     </div>
                 </article>

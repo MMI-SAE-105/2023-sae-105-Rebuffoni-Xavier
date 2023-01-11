@@ -29,7 +29,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-content: center;
     justify-content: space-between;
 }
 
